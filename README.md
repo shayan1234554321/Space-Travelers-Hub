@@ -25,9 +25,12 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Name] <a name="about-project"></a>
+# 📖 [Space-Travelers-Hub] <a name="about-project"></a>
 
-> 
+### Space-Travelers-Hub is a website where users can do the following:
+- Reserve a Rocket
+- Have some missions
+- Check Profile
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -43,14 +46,14 @@
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="">No server used</a></li>
+    <li><a href="">External API</a></li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="">No Database used</a></li>
+    <li><a href="">External API</a></li>
   </ul>
 </details>
 
@@ -58,7 +61,11 @@
 
 ### Key Features <a name="key-features"></a>
 
-- [ ] Key feature 1
+- [ ] Correct Git Flow
+- [ ] 
+- [ ] Display a list of Books
+- [ ] Add a Book
+- [ ] Remove a selected Book
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -66,7 +73,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<a href="">No Live link</a>
+<a href="">Not Live yet</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,7 +98,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-```git clone https://github.com/shayan1234554321/Calculator.git```
+```git clone https://github.com/shayan1234554321/bookstore.git```
 
 - [ ] Open the file in your code editor
 
@@ -134,7 +141,7 @@ npx stylelint "**/*.{css,scss}"
 ```
 
 ```
-npx eslint .
+npx eslint "**/*.{js,jsx}"
 ```
 
 ### Deployment
@@ -163,7 +170,9 @@ npm run deploy
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[feature 1]**
+- [ ] **[Complete the functionality.]**
+- [ ] **[Add tests]**
+- [ ] **[Deploy the page]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -172,7 +181,7 @@ npm run deploy
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-You can contribute to this project by writing an issue <a href="https://github.com/shayan1234554321/Calculator/issues" >here</a>
+You can contribute to this project by writing an issue <a href="https://github.com/shayan1234554321/bookstore/issues" >here</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
