@@ -4,7 +4,7 @@ import '../Styles/Rocket.css';
 
 const Rocket = ({ rocket }) => {
   const {
-    rocketImage, rocketName, rocketDescription, rocketStatus,
+    rocketImage, rocketName, rocketDescription, rocketStatus, rocketId,
   } = rocket;
 
   return (
@@ -16,6 +16,12 @@ const Rocket = ({ rocket }) => {
           {rocketStatus && <span className="blueBag">Reserved</span>}
           {rocketDescription}
         </p>
+        <button type="button">
+          {' '}
+          Reserve Rocket
+          {' '}
+          { rocketId }
+        </button>
       </div>
     </div>
   );
@@ -27,6 +33,7 @@ Rocket.propTypes = {
     rocketName: checkPropTypes.string.isRequired,
     rocketDescription: checkPropTypes.string.isRequired,
     rocketStatus: checkPropTypes.bool.isRequired,
+    rocketId: checkPropTypes.string.isRequired,
   }).isRequired,
 };
 

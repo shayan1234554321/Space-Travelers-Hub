@@ -8,7 +8,7 @@ const initialState = [];
 export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async () => {
   const response = await axios.get(RocketUrl).then((res) => res.data.map((el) => (
     {
-      roketId: el.id,
+      rocketId: el.id,
       rocketName: el.name,
       rocketDescription: el.description,
       rocketImage: el.flickr_images[0],
