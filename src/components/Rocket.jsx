@@ -1,19 +1,23 @@
 import React from 'react';
 import checkPropTypes from 'prop-types';
+import '../Styles/Rocket.css';
 
 const Rocket = ({ rocket }) => {
   const {
-    rocketImage, rocketName, rocketDescription, rocketStatus, rocketId,
+    rocketImage, rocketName, rocketDescription, rocketStatus,
   } = rocket;
 
   return (
-    <>
+    <div className="rocketItem">
       <img src={rocketImage} alt={rocketName} />
-      <h3>{ rocketName}</h3>
-      <p>{ rocketDescription }</p>
-      <p>{ rocketStatus }</p>
-      <p>{ rocketId }</p>
-    </>
+      <div>
+        <h3>{rocketName}</h3>
+        <p>
+          {rocketStatus && <span className="blueBag">Reserved</span>}
+          {rocketDescription}
+        </p>
+      </div>
+    </div>
   );
 };
 
@@ -22,8 +26,7 @@ Rocket.propTypes = {
     rocketImage: checkPropTypes.string.isRequired,
     rocketName: checkPropTypes.string.isRequired,
     rocketDescription: checkPropTypes.string.isRequired,
-    rocketStatus: checkPropTypes.string.isRequired,
-    rocketId: checkPropTypes.string.isRequired,
+    rocketStatus: checkPropTypes.bool.isRequired,
   }).isRequired,
 };
 

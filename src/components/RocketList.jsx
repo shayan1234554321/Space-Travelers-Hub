@@ -7,11 +7,7 @@ const RocketList = () => {
   const dispatch = useDispatch();
   const rockets = useSelector((state) => state.rockets);
   useEffect(() => { dispatch(fetchRockets()); }, [dispatch]);
-  // useEffect(() => {
-  //   console.log(rockets);
-  //   if (rockets.length === 0) { dispatch(fetchRockets()); }
-  // }, [dispatch, rockets]);
-  // dispatch(fetchRockets());
+
   return (
     <>
       <hr />
