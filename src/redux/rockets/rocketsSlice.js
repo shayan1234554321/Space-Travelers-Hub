@@ -12,7 +12,7 @@ export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async () =>
       rocketName: el.name,
       rocketDescription: el.description,
       rocketImage: el.flickr_images[0],
-      rocketStatus: true,
+      rocketStatus: false,
     }
   )));
   return response;
@@ -21,10 +21,18 @@ export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async () =>
 const rocketsSlice = createSlice({
   name: 'rockets',
   initialState,
-  reducers: {},
+  reducers: {
+    toggleRocketStatus: (state, action) => {
+      const rocket = state.find((el) => el.rocketId === action.payload);
+      if (rocket) {
+        rocket.rocketStatus = !rocket.rocketStatus;
+      }
+    },
+  },
   extraReducers(builder) {
     builder.addCase(fetchRockets.fulfilled, (state, action) => action.payload);
   },
 });
 
+export const { toggleRocketStatus } = rocketsSlice.actions;
 export default rocketsSlice.reducer;

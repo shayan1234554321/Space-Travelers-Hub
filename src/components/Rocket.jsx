@@ -1,8 +1,11 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import checkPropTypes from 'prop-types';
+import { toggleRocketStatus } from '../redux/rockets/rocketsSlice';
 import '../Styles/Rocket.css';
 
 const Rocket = ({ rocket }) => {
+  const dispatch = useDispatch();
   const {
     rocketImage, rocketName, rocketDescription, rocketStatus, rocketId,
   } = rocket;
@@ -16,12 +19,18 @@ const Rocket = ({ rocket }) => {
           {rocketStatus && <span className="blueBag">Reserved</span>}
           {rocketDescription}
         </p>
-        <button type="button">
-          {' '}
-          Reserve Rocket
-          {' '}
-          { rocketId }
-        </button>
+        {rocketStatus
+          ? (
+            <button type="button" className="whiteBag" onClick={() => { dispatch(toggleRocketStatus(rocketId)); }}>
+              Cancel reservation
+            </button>
+          )
+          : (
+            <button type="button" className="blueBag" onClick={() => { dispatch(toggleRocketStatus(rocketId)); }}>
+              Reserve Rocket
+            </button>
+          )}
+        ;
       </div>
     </div>
   );
