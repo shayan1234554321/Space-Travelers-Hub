@@ -11,6 +11,12 @@
   margin-top: 30px;
 }
 
+.profileMission,
+.profileRocket {
+  display: flex;
+  flex-direction: column;
+}
+
 .profileMission h2,
 .profileRocket h2 {
   font-weight: 500;
@@ -22,7 +28,5 @@
   width: 400px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   height: 20px;
-  display: flex;
-  align-items: center;
   padding: 20px;
 }
