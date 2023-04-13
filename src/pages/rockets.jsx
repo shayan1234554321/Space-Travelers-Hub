@@ -3,8 +3,7 @@ import '../Styles/Rockets.css';
 import RocketList from '../components/RocketList';
 
 const Rockets = () => (
-  <div>
-    <h2>Rockets</h2>
+  <div className="rocket">
     <RocketList />
   </div>
 );
