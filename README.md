@@ -27,12 +27,20 @@
 
 # 📖 [Space-Travelers-Hub] <a name="about-project"></a>
 
-### Space-Travelers-Hub is a website where users can do the following:
+### is a web application that provides commercial and scientific space travel services. This application will allow users to book rockets and join selected space missions
 - Reserve a Rocket
 - Have some missions
 - Check Profile
 
 ## 🛠 Built With <a name="built-with"></a>
+
+- HTML
+- CSS
+- JavaScript
+- NPM
+- React
+- React router
+- Redux
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -61,11 +69,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- [ ] Correct Git Flow
-- [ ] 
-- [ ] Display a list of Books
-- [ ] Add a Book
-- [ ] Remove a selected Book
+- **[Display Rockets, Missions pages using SpaceX API]**
+- **[Display Mission enrollment and Rocket reservation status and allow to change them]**
+- **[Display of user Profile with list of enrolled missions and reserved rockets]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,7 +104,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-```git clone https://github.com/shayan1234554321/bookstore.git```
+```git clone https://github.com/shayan1234554321/Space-Travelers-Hub.git```
 
 - [ ] Open the file in your code editor
 
@@ -164,6 +170,12 @@ npm run deploy
 - Twitter: [@twitterhandle](https://twitter.com/shayan123455432)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/shayan-khan20/)
 
+👤 Giancarlo Dumani
+
+- GitHub: [@gdumani](https://github.com/gdumani)
+- Twitter: [@gdumani1](https://twitter.com/gdumani1)
+- LinkedIn: [ Giancarlo-Dumani](https://www.linkedin.com/in/gdumani/?originalSubdomain=cr)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -172,8 +184,6 @@ npm run deploy
 
 - [ ] **[Complete the functionality.]**
 - [ ] **[Add tests]**
-- [ ] **[Deploy the page]**
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,7 +191,7 @@ npm run deploy
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-You can contribute to this project by writing an issue <a href="https://github.com/shayan1234554321/bookstore/issues" >here</a>
+You can contribute to this project by writing an issue <a href="https://github.com/shayan1234554321/Space-Travelers-Hub/issues" >here</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
