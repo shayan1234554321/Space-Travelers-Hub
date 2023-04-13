@@ -17,7 +17,7 @@ const Navbar = () => {
           <li>
             <Link
               onClick={() => setActive('rockets')}
-              className={active === 'rockets' && 'selected'}
+              className={active === 'rockets' ? 'selected' : undefined}
               to="/"
             >
               Rockets
@@ -26,7 +26,7 @@ const Navbar = () => {
           <li>
             <Link
               onClick={() => setActive('missions')}
-              className={active === 'missions' && 'selected'}
+              className={active === 'missions' ? 'selected' : undefined}
               to="/missions"
             >
               Missions
@@ -35,7 +35,7 @@ const Navbar = () => {
           <li>
             <Link
               onClick={() => setActive('myProfile')}
-              className={active === 'myProfile' && 'selected'}
+              className={active === 'myProfile' ? 'selected' : undefined}
               to="/profile"
             >
               My Profile
