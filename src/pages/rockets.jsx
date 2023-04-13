@@ -4,7 +4,7 @@ import RocketList from '../components/RocketList';
 
 const Rockets = () => (
   <div>
-    <h2>Rockets</h2>
+    <h3>Rockets</h3>
     <RocketList />
   </div>
 );

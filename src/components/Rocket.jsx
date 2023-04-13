@@ -30,7 +30,6 @@ const Rocket = ({ rocket }) => {
               Reserve Rocket
             </button>
           )}
-        ;
       </div>
     </div>
   );
