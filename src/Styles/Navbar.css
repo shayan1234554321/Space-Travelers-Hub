@@ -40,7 +40,7 @@ header {
   color: black;
 }
 
-.linksList .selected {
+.linksList .active {
   color: rgb(0, 157, 255);
 }
 

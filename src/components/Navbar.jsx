@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import planetIcon from '../assets/planet.png';
 import '../Styles/Navbar.css';
 
@@ -15,31 +15,28 @@ const Navbar = () => {
         </div>
         <ul className="linksList">
           <li>
-            <Link
-              onClick={() => setActive('rockets')}
-              className={active === 'rockets' ? 'selected' : undefined}
+            <NavLink
               to="/"
+              className={({ isActive, isPending }) => (isActive ? 'active' : '')}
             >
               Rockets
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
-              onClick={() => setActive('missions')}
-              className={active === 'missions' ? 'selected' : undefined}
+            <NavLink
               to="/missions"
+              className={({ isActive, isPending }) => (isActive ? 'active' : '')}
             >
               Missions
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
-              onClick={() => setActive('myProfile')}
-              className={active === 'myProfile' ? 'selected' : undefined}
+            <NavLink
               to="/profile"
+              className={({ isActive, isPending }) => (isActive ? 'active' : '')}
             >
               My Profile
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
