@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Rocket from '../components/Rocket';
+import { Provider } from 'react-redux';
+import store from '../redux/store'
 
 it('renders without crashing', () => {
   const data = {
@@ -12,8 +14,8 @@ it('renders without crashing', () => {
   };
   const root = ReactDOM.createRoot(document.createElement('div'));
   root.render(
-    <div>
+    <Provider store={store}>
       <Rocket rocket={data} />
-    </div>,
+    </Provider>,
   );
 });
