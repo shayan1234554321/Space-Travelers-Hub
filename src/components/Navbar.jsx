@@ -14,7 +14,7 @@ const Navbar = () => (
         <li>
           <NavLink
             to="/"
-            activeClassName="active"
+            activeclassname="active"
           >
             Rockets
           </NavLink>
@@ -22,7 +22,7 @@ const Navbar = () => (
         <li>
           <NavLink
             to="/missions"
-            activeClassName="active"
+            activeclassname="active"
           >
             Missions
           </NavLink>
@@ -30,7 +30,7 @@ const Navbar = () => (
         <li>
           <NavLink
             to="/profile"
-            activeClassName="active"
+            activeclassname="active"
           >
             My Profile
           </NavLink>
