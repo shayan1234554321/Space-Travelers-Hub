@@ -135,7 +135,7 @@ To run the project, execute the following command:
 Start the server
 
 ```
-npm start
+npm run dev
 ```
 
 ### Run tests
@@ -143,11 +143,11 @@ npm start
 To run Stylelint and ESLint tests, run the following commands respectively:
 
 ```
-npx stylelint "**/*.{css,scss}"
+npx run lint:style
 ```
 
 ```
-npx eslint "**/*.{js,jsx}"
+npx run lint:es
 ```
 
 ### Deployment

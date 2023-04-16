@@ -14,7 +14,7 @@ const Navbar = () => (
         <li>
           <NavLink
             to="/"
-            className={({ isActive }) => (isActive ? 'active' : '')}
+            activeclassname="active"
           >
             Rockets
           </NavLink>
@@ -22,7 +22,7 @@ const Navbar = () => (
         <li>
           <NavLink
             to="/missions"
-            className={({ isActive }) => (isActive ? 'active' : '')}
+            activeclassname="active"
           >
             Missions
           </NavLink>
@@ -30,7 +30,7 @@ const Navbar = () => (
         <li>
           <NavLink
             to="/profile"
-            className={({ isActive }) => (isActive ? 'active' : '')}
+            activeclassname="active"
           >
             My Profile
           </NavLink>

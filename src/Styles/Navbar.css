@@ -42,6 +42,7 @@ header {
 
 .linksList .active {
   color: rgb(0, 157, 255);
+  text-decoration: underline;
 }
 
 .linksList li {
