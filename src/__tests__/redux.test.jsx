@@ -1,13 +1,12 @@
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
-import reducer, { getAllMissions, SwitchMission } from '../redux/missions/missionsSlice.js';
+import reducer, { getAllMissions, SwitchMission } from '../redux/missions/missionsSlice';
 
 const mockStore = configureStore([thunk]);
 
 describe('missions actions', () => {
   it('should dispatch action to get all missions', async () => {
-
     const store = mockStore({ missions: [] });
 
     await store.dispatch(getAllMissions());
