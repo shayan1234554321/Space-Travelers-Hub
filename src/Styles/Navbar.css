@@ -1,0 +1,58 @@
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: calc(100% - 40px);
+}
+
+.container > div {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  object-fit: contain;
+}
+
+.linksList {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.linksList a {
+  text-decoration: none;
+  color: black;
+}
+
+.linksList .active {
+  color: rgb(0, 157, 255);
+  text-decoration: underline;
+}
+
+.linksList li {
+  transition: 0.2s ease-in-out;
+}
+
+.linksList li:hover {
+  transform: scale(1.05);
+}
+
+.linksList li:active {
+  transform: scale(0.95);
+}
